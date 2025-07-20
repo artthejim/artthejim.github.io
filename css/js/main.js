@@ -5,7 +5,7 @@ function loadGallery() {
     const images = [
         'images/Bloom in Silence.jpg',
         'images/Bold.jpg',
-        'images/Charcoal portrait.jpg',
+        'images/Charcoal potrait.jpg',
         'images/Broken.jpg',
         'images/Momoa.jpg',
         'images/Beauty.jpg',
