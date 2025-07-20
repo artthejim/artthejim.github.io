@@ -1,77 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 20px;
-      background-color: #f0f0f0;
-    }
-    h1 {
-      color: #333;
-    }
-    p {
-      font-size: 18px;
-      color: #555;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin: 20px 0;
-    }
-    .gallery img {
-      max-width: 300px;
-      height: auto;
-      border: 2px solid #ddd;
-      border-radius: 8px;
-    }
-    .social-links {
-      margin-top: 20px;
-    }
-    .social-links a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #1a73e8;
-      font-size: 16px;
-    }
-    .social-links a:hover {
-      text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-      .gallery img {
-        max-width: 100%;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Art Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Welcome to My Website!</h1>
-  <p>This is my GitHub Pages site showcasing my images and social media.</p>
+    <header>
+        <h1>Your Art Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#vlogs">Vlogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="YOUR_FACEBOOK_URL" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="YOUR_INSTAGRAM_URL" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="YOUR_TWITTER_URL" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="YOUR_YOUTUBE_URL" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </header>
 
-  <!-- Image Gallery -->
-  <h2>My Image Gallery</h2>
-  <div class="gallery">
-    <!-- Add as many images as you want here -->
-    <img src="images/image1.jpg" alt="Image 1">
-    <img src="images/image2.jpg" alt="Image 2">
-    <img src="images/image3.jpg" alt="Image 3">
-    <!-- Add more <img> tags for additional images -->
-  </div>
+    <section id="gallery">
+        <h2>Art Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Images will be dynamically loaded here -->
+        </div>
+        <input type="file" id="imageUpload" accept="image/*" multiple>
+        <button onclick="uploadImages()">Upload Images</button>
+    </section>
 
-  <!-- Social Media Links -->
-  <h2>Connect with Me</h2>
-  <div class="social-links">
-    <a href="https://x.com/yourusername" target="_blank">X</a>
-    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-    <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
-    <!-- Add more social links as needed -->
-  </div>
+    <section id="vlogs">
+        <h2>Vlogs</h2>
+        <div class="vlog-grid">
+            <!-- Vlogs will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact for Purchases</h2>
+        <p>Interested in purchasing art? Reach out via email or social media!</p>
+        <a href="mailto:your.email@example.com" class="contact-button">Email Us</a>
+    </section>
+
+    <footer>
+        <p>© 2025 Your Art Gallery. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
-</html>
+          </html>
