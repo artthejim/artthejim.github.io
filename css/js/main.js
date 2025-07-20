@@ -3,8 +3,13 @@ function loadGallery() {
     const gallery = document.querySelector('.gallery-grid');
     // This is a simplified example. In production, you'd fetch from a server
     const images = [
-        'images/art1.jpg',
-        'images/art2.jpg',
+        'images/Bloom in Silence.jpg',
+        'images/Bold.jpg',
+        'images/Charcoal portrait.jpg',
+        'images/Broken.jpg',
+        'images/Momoa.jpg',
+        'images/Beauty.jpg',
+        'images/Color pencils portrait.jpg',
         // Add more image paths
     ];
 
